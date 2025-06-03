@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de keygen</title>
+</head>
+<body>
+    <!-- 
+        A tag <keygen> era utilizada para gerar um par de chaves pública/privada para autenticação em formulários.
+        Ela criava automaticamente um campo de chave pública para ser enviado ao servidor.
+        OBS: A tag <keygen> foi descontinuada e removida dos navegadores modernos por questões de segurança e falta de uso.
+        Atualmente, recomenda-se usar APIs modernas de criptografia e autenticação.
+    -->
+
+    <h2>Exemplo histórico de uso do keygen</h2>
+    <form action="#" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br><br>
+        <!-- Exemplo de uso da tag keygen (não funciona nos navegadores atuais) -->
+        <label>Chave de autenticação:</label>
+        <keygen name="chave">
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <p style="color: red;">
+        Observação: a tag &lt;keygen&gt; está obsoleta e não é mais suportada nos navegadores modernos.
+    </p>
+</body>
+</html>

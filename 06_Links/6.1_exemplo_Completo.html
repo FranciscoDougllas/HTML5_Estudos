@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exemplos com link, a e nav</title>
+
+  <!-- 
+    A tag <link> é usada no <head> para importar recursos externos,
+    como folhas de estilo CSS, fontes ou ícones.
+  -->
+
+  <!-- Exemplo: importando uma folha de estilo externa -->
+  <link rel="stylesheet" href="estilos.css">
+
+  <!-- Exemplo: adicionando ícone da página (favicon) -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Exemplo: importando fonte do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    nav {
+      background-color: #f4f4f4;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #0066cc;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 
+    A tag <nav> representa uma área de navegação da página.
+    Normalmente contém links (<a>) para outras seções ou páginas do site.
+  -->
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <!-- Seções para navegação interna usando <a href="#id"> -->
+  <section id="inicio">
+    <h2>Bem-vindo!</h2>
+    <p>Esta é a seção inicial da página.</p>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>Somos uma empresa dedicada a fornecer soluções web.</p>
+  </section>
+
+  <section id="servicos">
+    <h2>Nossos Serviços</h2>
+    <ul>
+      <li>Desenvolvimento Web</li>
+      <li>Consultoria Técnica</li>
+      <li>Treinamentos</li>
+    </ul>
+  </section>
+
+  <section id="contato">
+    <h2>Fale Conosco</h2>
+    <p>Entre em contato pelo <a href="mailto:contato@empresa.com">e-mail</a>.</p>
+  </section>
+
+  <hr />
+
+  <!-- 
+    A tag <a> (âncora) é usada para criar hyperlinks.
+    Pode apontar para páginas externas, seções internas da mesma página, emails ou arquivos.
+  -->
+
+  <!-- Link externo (abre na mesma aba) -->
+  <p>Visite o <a href="https://www.google.com">Google</a>.</p>
+
+  <!-- Link externo abrindo em nova aba -->
+  <p>Leia mais no <a href="https://developer.mozilla.org/pt-BR/" target="_blank">MDN Web Docs</a>.</p>
+
+  <!-- Link para download de um arquivo PDF -->
+  <p><a href="documento.pdf" download>Baixar Documento PDF</a></p>
+
+  <!-- Link para abrir o WhatsApp -->
+  <p><a href="https://wa.me/5511999999999" target="_blank">Fale conosco via WhatsApp</a></p>
+
+</body>
+</html>

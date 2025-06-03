@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de img</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 40px 0;
+        }
+        img {
+            margin: 16px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #3333;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        A tag <img> é utilizada para exibir imagens em uma página HTML.
+        Os atributos principais são:
+        - src: caminho ou URL da imagem.
+        - alt: texto alternativo exibido caso a imagem não carregue (importante para acessibilidade).
+        - width e height: definem o tamanho da imagem (opcionais).
+        - title: texto exibido ao passar o mouse sobre a imagem (opcional).
+    -->
+
+    <h2>Exemplo de uso da tag img</h2>
+    <!-- Exemplo básico -->
+    <img src="https://www.w3schools.com/html/img_chania.jpg" alt="Paisagem de Chania" width="300">
+
+    <!-- Exemplo com texto alternativo e título -->
+    <img src="https://www.w3schools.com/html/img_girl.jpg" alt="Garota sorrindo" width="200" title="Garota feliz">
+
+    <!-- Exemplo de imagem local (supondo que exista o arquivo na mesma pasta) -->
+    <img src="../images/AE1.jpg" alt="Logo da empresa" width="120">
+
+    <!-- Exemplo de imagem quebrada para mostrar o alt -->
+    <img src="imagem_inexistente.jpg" alt="Imagem não encontrada" width="120">
+
+</body>
+</html>

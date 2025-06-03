@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de thead, tbody e tfoot</title>
+</head>
+<body>
+    <!-- 
+        <thead>: Agrupa o cabeçalho da tabela.
+        <tbody>: Agrupa o corpo principal da tabela, onde ficam os dados.
+        <tfoot>: Agrupa o rodapé da tabela, geralmente usado para totais ou informações finais.
+        Essas tags ajudam na organização, semântica e acessibilidade da tabela.
+    -->
+
+    <h2>Exemplo de tabela com thead, tbody e tfoot</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Notebook</td>
+                <td>10</td>
+                <td>R$ 3500,00</td>
+            </tr>
+            <tr>
+                <td>Mouse</td>
+                <td>50</td>
+                <td>R$ 50,00</td>
+            </tr>
+            <tr>
+                <td>Teclado</td>
+                <td>30</td>
+                <td>R$ 120,00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"><strong>Total de Itens</strong></td>
+                <td>90</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

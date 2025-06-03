@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de textarea</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        form {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 10px #333;
+            padding: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        A tag <textarea> é utilizada para criar um campo de texto multilinha em formulários.
+        É ideal para comentários, descrições ou mensagens longas.
+        Os atributos "rows" e "cols" definem o tamanho inicial do campo, mas ele pode ser redimensionado pelo usuário.
+    -->
+
+    <h2>Exemplo de uso do textarea</h2>
+    <form action="#" method="post">
+        <label for="comentario">Deixe seu comentário:</label><br>
+        <textarea id="comentario" name="comentario" rows="5" cols="40" placeholder="Digite seu comentário aqui..."></textarea>
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de todos os tipos de button</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 40px 0;
+        }
+        form {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 10px #333;
+            padding: 20px;
+            border-radius: 8px;
+            background: #fafafa;
+        }
+        button, input[type="submit"], input[type="reset"], input[type="button"] {
+            margin: 8px 0;
+            padding: 8px 16px;
+            font-size: 1rem;
+            border-radius: 4px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Existem três tipos principais de botões em HTML:
+        - button type="submit": envia o formulário.
+        - button type="reset": limpa todos os campos do formulário.
+        - button type="button": executa uma ação personalizada via JavaScript.
+        Também é possível usar os elementos <input type="submit">, <input type="reset"> e <input type="button">.
+    -->
+
+    <h2>Exemplo de todos os tipos de button</h2>
+    <form onsubmit="alert('Formulário enviado!'); return false;">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br>
+
+        <!-- Botão do tipo submit usando <button> -->
+        <button type="submit">Enviar (button type="submit")</button>
+
+        <!-- Botão do tipo reset usando <button> -->
+        <button type="reset">Limpar (button type="reset")</button>
+
+        <!-- Botão do tipo button usando <button> -->
+        <button type="button" onclick="alert('Ação personalizada!')">Ação (button type="button")</button>
+
+        <hr>
+
+        <!-- Botão do tipo submit usando <input> -->
+        <input type="submit" value="Enviar (input type='submit')">
+
+        <!-- Botão do tipo reset usando <input> -->
+        <input type="reset" value="Limpar (input type='reset')">
+
+        <!-- Botão do tipo button usando <input> -->
+        <input type="button" value="Ação (input type='button')" onclick="alert('Ação personalizada com input!')">
+    </form>
+</body>
+</html>

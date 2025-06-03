@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de inputs number e range</title>
+
+     <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        form {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 10px #333;
+            padding: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Exemplos de uso da tag <label>:
+        A tag <label> é usada para associar um texto descritivo a um campo de formulário, melhorando a acessibilidade e a usabilidade.
+        O atributo "for" do <label> deve ser igual ao "id" do campo correspondente.
+        Ao clicar no texto do <label>, o campo relacionado é automaticamente selecionado.
+    -->
+
+    <h2>Inputs Number e Range com Label</h2>
+    <form>
+        <!-- Input tipo number com label -->
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" min="0" max="120" step="1" placeholder="Digite sua idade">
+        <br><br>
+
+        <!-- Input tipo range com label -->
+        <label for="satisfacao">Nível de satisfação:</label>
+        <input type="range" id="satisfacao" name="satisfacao" min="0" max="10" step="1">
+        <span id="valorSatisfacao">5</span>
+        <br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        // Exemplo de atualização dinâmica do valor do range
+        const range = document.getElementById('satisfacao');
+        const valor = document.getElementById('valorSatisfacao');
+        range.value = 5;
+        range.addEventListener('input', function() {
+            valor.textContent = range.value;
+        });
+    </script>
+</body>
+</html>

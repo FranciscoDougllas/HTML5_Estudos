@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de datalist</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 40px 0;
+        }
+        form {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 10px #333;
+            padding: 20px;
+            border-radius: 8px;
+            background: #fafafa;
+        }
+        input, datalist {
+            margin: 8px 0;
+            padding: 6px;
+            font-size: 1rem;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        A tag <datalist> é usada para fornecer uma lista de opções sugeridas para um campo <input>.
+        O usuário pode digitar livremente ou escolher uma das opções sugeridas.
+        O atributo "list" do <input> deve ser igual ao "id" do <datalist>.
+    -->
+
+    <h2>Exemplo de uso do datalist</h2>
+    <form>
+        <label for="cidade">Escolha uma cidade:</label>
+        <input type="text" id="cidade" name="cidade" list="cidades" placeholder="Digite ou selecione uma cidade">
+        <datalist id="cidades">
+            <option value="São Paulo">
+            <option value="Rio de Janeiro">
+            <option value="Belo Horizonte">
+            <option value="Curitiba">
+            <option value="Porto Alegre">
+        </datalist>
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

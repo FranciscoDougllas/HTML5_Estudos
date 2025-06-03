@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de inputs de datas e horários</title>
+
+     <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        form {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 10px #333;
+            padding: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Exemplos de inputs dos tipos:
+        - date: campo para selecionar uma data (dia, mês e ano).
+        - datetime-local: campo para selecionar data e hora (sem fuso horário).
+        - month: campo para selecionar mês e ano.
+        - time: campo para selecionar apenas o horário.
+        - week: campo para selecionar a semana do ano.
+    -->
+
+    <h2>Inputs de Datas e Horários</h2>
+    <form>
+        <!-- Input tipo date -->
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data">
+        <br><br>
+
+        <!-- Input tipo datetime-local -->
+        <label for="datahora">Data e Hora:</label>
+        <input type="datetime-local" id="datahora" name="datahora">
+        <br><br>
+
+        <!-- Input tipo month -->
+        <label for="mes">Mês:</label>
+        <input type="month" id="mes" name="mes">
+        <br><br>
+
+        <!-- Input tipo time -->
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora">
+        <br><br>
+
+        <!-- Input tipo week -->
+        <label for="semana">Semana:</label>
+        <input type="week" id="semana" name="semana">
+        <br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

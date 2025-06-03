@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exemplo de menu</title>
+</head>
+<body>
+  <!-- 
+      A tag <menu> é usada para agrupar comandos contextuais.
+      Pode ser ativada com o atributo "contextmenu".
+  -->
+
+  <h2>Menu de Contexto</h2>
+
+  <!-- Menu personalizado ativado com botão direito -->
+  <div contextmenu="meu-menu">
+    Clique com o botão direito aqui.
+  </div>
+
+  <!-- Definindo o menu com comandos -->
+  <menu type="context" id="meu-menu">
+    <menuitem label="Copiar" icon="copy.png" onclick="alert('Copiar')"></menuitem>
+    <menuitem label="Colar" icon="paste.png" onclick="alert('Colar')"></menuitem>
+    <menuitem label="Atualizar" onclick="location.reload()"></menuitem>
+  </menu>
+
+  <!-- 
+      ⚠️ Atenção: a tag <menuitem> é obsoleta na maioria dos navegadores,
+      então o comportamento pode não funcionar corretamente sem JavaScript.
+  -->
+</body>
+</html>

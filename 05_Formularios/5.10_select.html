@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de select</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 40px 0;
+        }
+        form {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 10px #333;
+            padding: 20px;
+            border-radius: 8px;
+            background: #fafafa;
+        }
+        select {
+            margin: 8px 0;
+            padding: 6px;
+            font-size: 1rem;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        A tag <select> é utilizada para criar uma lista suspensa de opções em formulários.
+        Cada opção é definida pela tag <option>.
+        O atributo "multiple" pode ser usado para permitir múltiplas seleções.
+        O atributo "size" define quantas opções são visíveis sem rolar.
+    -->
+
+    <h2>Exemplo de uso do select</h2>
+    <form>
+        <label for="pais">Escolha um país:</label>
+        <select id="pais" name="pais">
+            <option value="">Selecione...</option>
+            <option value="br">Brasil</option>
+            <option value="pt">Portugal</option>
+            <option value="us">Estados Unidos</option>
+            <option value="fr">França</option>
+        </select>
+        <br><br>
+
+        <!-- Exemplo de select com múltipla seleção -->
+        <label for="linguas">Selecione os idiomas que você fala:</label>
+        <select id="linguas" name="linguas" multiple size="4">
+            <option value="pt">Português</option>
+            <option value="en">Inglês</option>
+            <option value="es">Espanhol</option>
+            <option value="fr">Francês</option>
+        </select>
+        <br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

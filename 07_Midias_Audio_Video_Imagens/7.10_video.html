@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de video</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 40px 0;
+        }
+        video {
+            margin: 16px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #3333;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        A tag <video> é usada para incorporar vídeos em uma página HTML.
+        Os principais atributos são:
+        - controls: exibe controles de reprodução (play, pause, volume).
+        - src: caminho ou URL do arquivo de vídeo.
+        - width e height: definem o tamanho do vídeo.
+        - autoplay: inicia a reprodução automaticamente.
+        - loop: faz o vídeo repetir automaticamente.
+        - muted: inicia o vídeo sem som.
+        É possível usar múltiplas fontes <source> para suportar diferentes formatos.
+    -->
+
+    <h2>Exemplo de uso da tag video</h2>
+    <video width="400" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+        Seu navegador não suporta o elemento <code>video</code>.
+    </video>
+    <p>
+        O elemento <strong>&lt;video&gt;</strong> permite adicionar vídeos à sua página web.
+    </p>
+</body>
+</html>

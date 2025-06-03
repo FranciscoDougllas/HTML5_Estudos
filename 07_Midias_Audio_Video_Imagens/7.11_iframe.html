@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de iframe</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 40px 0;
+        }
+        iframe {
+            margin: 16px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #3333;
+            border: 1px solid #007bff;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        A tag <iframe> é usada para incorporar outra página HTML ou conteúdo externo dentro da página atual.
+        Os principais atributos são:
+        - src: URL do conteúdo a ser exibido.
+        - width e height: definem o tamanho do iframe.
+        - title: texto descritivo para acessibilidade.
+        - allowfullscreen: permite exibição em tela cheia (para vídeos, mapas, etc).
+        - frameborder (obsoleto): define a borda do iframe.
+    -->
+
+    <h2>Exemplo de uso da tag iframe</h2>
+    <!-- Exemplo incorporando um site -->
+    <iframe src="https://www.w3schools.com" width="600" height="300" title="Exemplo W3Schools"></iframe>
+
+    <!-- Exemplo incorporando um vídeo do YouTube -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY" 
+        title="YouTube video player" allowfullscreen></iframe>
+
+    <!-- Exemplo incorporando um mapa do Google Maps -->
+    <iframe 
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-46.693419%2C-23.568704%2C-46.641146%2C-23.527012&amp;layer=mapnik" 
+        width="600" height="300" title="Mapa de São Paulo"></iframe>
+</body>
+</html>

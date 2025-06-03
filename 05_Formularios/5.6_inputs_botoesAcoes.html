@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de inputs button, submit, reset e image</title>
+
+     <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        form {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 10px #333;
+            padding: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Exemplos de inputs dos tipos:
+        - button: botão comum, pode executar ações via JavaScript.
+        - submit: botão que envia o formulário.
+        - reset: botão que limpa todos os campos do formulário.
+        - image: botão de envio com imagem personalizada.
+    -->
+
+    <h2>Inputs Button, Submit, Reset e Image</h2>
+    <form action="#" method="post">
+        <!-- Input tipo button -->
+        <input type="button" value="Clique aqui" onclick="alert('Botão do tipo button clicado!')">
+        <br><br>
+
+        <!-- Input tipo submit -->
+        <input type="submit" value="Enviar formulário">
+        <br><br>
+
+        <!-- Input tipo reset -->
+        <input type="reset" value="Limpar campos">
+        <br><br>
+
+        <!-- Input tipo image -->
+        <input type="image" src="https://upload.wikimedia.org/wikipedia/commons/4/4e/PHP_Logo.png" alt="Enviar com imagem" width="60" height="30">
+        <br><br>
+    </form>
+</body>
+</html>

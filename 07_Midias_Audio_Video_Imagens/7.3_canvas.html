@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de canvas</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 40px 0;
+        }
+        canvas {
+            border: 2px solid #007bff;
+            border-radius: 8px;
+            margin: 16px 0;
+            background: #f0f8ff;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        A tag <canvas> é usada para desenhar gráficos, imagens, formas e animações via JavaScript.
+        É um elemento gráfico dinâmico, ideal para jogos, visualizações e desenhos personalizados.
+        Os atributos "width" e "height" definem o tamanho da área de desenho.
+        O conteúdo entre as tags é exibido apenas se o navegador não suportar canvas.
+    -->
+
+    <h2>Exemplo de uso do canvas</h2>
+    <canvas id="meuCanvas" width="400" height="200">
+        Seu navegador não suporta o elemento canvas.
+    </canvas>
+
+    <script>
+        // Obtendo o contexto de desenho 2D
+        const canvas = document.getElementById('meuCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Desenhando um retângulo azul
+        ctx.fillStyle = '#007bff';
+        ctx.fillRect(20, 20, 120, 80);
+
+        // Desenhando um círculo vermelho
+        ctx.beginPath();
+        ctx.arc(250, 100, 40, 0, 2 * Math.PI);
+        ctx.fillStyle = '#ff3333';
+        ctx.fill();
+
+        // Desenhando texto
+        ctx.font = '20px Courier New';
+        ctx.fillStyle = '#333';
+        ctx.fillText('Canvas em ação!', 120, 180);
+    </script>
+</body>
+</html>

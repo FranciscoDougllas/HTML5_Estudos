@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Exemplo de div e span</title>
+
+    <!-- Estilos simples para mostrar diferenças visuais -->
+    <style>
+        .caixa {
+            border: 2px solid #4CAF50;
+            padding: 10px;
+            margin-bottom: 15px;
+            background-color: #f9fff9;
+        }
+
+        .destaque {
+            color: red;
+            font-weight: bold;
+        }
+
+        .exemplo-span {
+            background-color: yellow;
+            padding: 2px 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        A tag <div> é um container de bloco. 
+        Ela é usada para agrupar conteúdos e elementos HTML, criando seções lógicas no layout. 
+        É muito usada com CSS e JavaScript para estilizar ou manipular partes da página.
+    -->
+    
+    <div class="caixa">
+        <h2>Exemplo de uso da tag &lt;div&gt;</h2>
+        <p>Esta é uma <strong>divisão de bloco</strong> que agrupa um título e um parágrafo.</p>
+        <p>Podemos aplicar estilos e organizar o layout com facilidade usando <code>&lt;div&gt;</code>.</p>
+    </div>
+
+    <!-- 
+        Outro uso da <div>: Agrupando várias seções ou componentes em uma página.
+    -->
+    <div class="caixa">
+        <h3>Seção de Contato</h3>
+        <p>Nome: João da Silva</p>
+        <p>Email: joao@email.com</p>
+        <p>Telefone: (11) 99999-9999</p>
+    </div>
+
+    <!-- 
+        A tag <span> é um container em linha (inline).
+        Ela é usada para aplicar estilos ou scripts a uma parte específica do texto dentro de outros elementos.
+        Diferente da <div>, não quebra a linha.
+    -->
+    
+    <div class="caixa">
+        <h2>Exemplo de uso da tag &lt;span&gt;</h2>
+        <p>
+            Você pode <span class="destaque">destacar palavras</span> específicas usando <code>&lt;span&gt;</code>.
+        </p>
+        <p>
+            Por exemplo: <span class="exemplo-span">texto amarelo</span> no meio de um parágrafo.
+        </p>
+    </div>
+
+    <!-- 
+        Exemplo combinando <div> e <span> em um card simples
+    -->
+    <div class="caixa">
+        <h3>Produto</h3>
+        <p><strong>Nome:</strong> <span class="destaque">Notebook Dell</span></p>
+        <p><strong>Preço:</strong> <span class="exemplo-span">R$ 3.999,00</span></p>
+        <p><strong>Status:</strong> <span style="color: green;">Disponível</span></p>
+    </div>
+
+</body>
+</html>

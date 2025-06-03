@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de table</title>
+</head>
+<body>
+    <!-- 
+        A tag <table> é utilizada para criar tabelas em HTML.
+        Dentro de <table>, usamos:
+        - <tr> (table row): define uma linha da tabela.
+        - <th> (table header): define uma célula de cabeçalho, geralmente em negrito e centralizada.
+        - <td> (table data): define uma célula de dados comum.
+        Tabelas podem conter também <caption>, <thead>, <tbody> e <tfoot> para melhor organização.
+    -->
+
+    <!-- Exemplo 1: Tabela simples com 2 linhas e 2 colunas -->
+    <h2>Tabela Simples</h2>
+    <table border="1">
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>30</td>
+        </tr>
+    </table>
+
+    <!-- Exemplo 2: Tabela com caption e cabeçalho separado -->
+    <h2>Tabela com Caption e Thead</h2>
+    <table border="1">
+        <caption>Funcionários</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Cargo</th>
+                <th>Departamento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Maria</td>
+                <td>Analista</td>
+                <td>TI</td>
+            </tr>
+            <tr>
+                <td>Carlos</td>
+                <td>Gerente</td>
+                <td>RH</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Exemplo 3: Tabela com células mescladas usando colspan e rowspan -->
+    <h2>Tabela com colspan e rowspan</h2>
+    <table border="1">
+        <tr>
+            <th rowspan="2">Produto</th>
+            <th colspan="2">Vendas</th>
+        </tr>
+        <tr>
+            <th>2024</th>
+            <th>2025</th>
+        </tr>
+        <tr>
+            <td>Notebook</td>
+            <td>150</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td>Tablet</td>
+            <td>80</td>
+            <td>120</td>
+        </tr>
+    </table>
+</body>
+</html>

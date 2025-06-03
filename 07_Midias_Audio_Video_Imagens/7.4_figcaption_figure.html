@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de figure e figcaption</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 40px 0;
+        }
+        figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 24px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 16px;
+            background: #fafafa;
+            max-width: 350px;
+        }
+        figcaption {
+            margin-top: 8px;
+            font-style: italic;
+            color: #555;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        A tag <figure> é usada para agrupar elementos de mídia, como imagens, gráficos ou códigos, com sua respectiva legenda.
+        A tag <figcaption> fornece uma legenda ou descrição para o conteúdo do <figure>.
+        Isso melhora a semântica e a acessibilidade do conteúdo visual.
+    -->
+
+    <h2>Exemplo de uso de figure e figcaption</h2>
+    <figure>
+        <img src="https://www.w3schools.com/html/img_chania.jpg" alt="Paisagem de Chania" width="300">
+        <figcaption>Paisagem de Chania, exemplo de imagem com legenda usando &lt;figure&gt; e &lt;figcaption&gt;.</figcaption>
+    </figure>
+
+    <figure>
+        <canvas width="200" height="100" style="background:#e0e0e0; border-radius:6px;"></canvas>
+        <figcaption>Exemplo de elemento gráfico dentro de um &lt;figure&gt; com legenda.</figcaption>
+    </figure>
+</body>
+</html>

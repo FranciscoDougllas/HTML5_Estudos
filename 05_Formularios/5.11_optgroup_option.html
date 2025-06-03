@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de optgroup e option</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 40px 0;
+        }
+        form {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 10px #333;
+            padding: 20px;
+            border-radius: 8px;
+            background: #fafafa;
+        }
+        select {
+            margin: 8px 0;
+            padding: 6px;
+            font-size: 1rem;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        A tag <optgroup> é utilizada dentro de <select> para agrupar opções relacionadas, facilitando a organização visual.
+        Cada grupo recebe um atributo "label" que descreve o grupo.
+        As opções individuais são definidas com <option>.
+    -->
+
+    <h2>Exemplo de uso de optgroup e option</h2>
+    <form>
+        <label for="carro">Escolha um modelo de carro:</label>
+        <select id="carro" name="carro">
+            <option value="">Selecione...</option>
+            <optgroup label="Volkswagen">
+                <option value="gol">Gol</option>
+                <option value="polo">Polo</option>
+                <option value="virtus">Virtus</option>
+            </optgroup>
+            <optgroup label="Fiat">
+                <option value="uno">Uno</option>
+                <option value="argo">Argo</option>
+                <option value="mobi">Mobi</option>
+            </optgroup>
+            <optgroup label="Chevrolet">
+                <option value="onix">Onix</option>
+                <option value="prisma">Prisma</option>
+                <option value="cruze">Cruze</option>
+            </optgroup>
+        </select>
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

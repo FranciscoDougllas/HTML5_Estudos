@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de inputs file, color e hidden</title>
+     <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        form {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 10px #333;
+            padding: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Exemplos de inputs dos tipos:
+        - file: permite ao usuário selecionar e enviar arquivos.
+        - color: permite ao usuário escolher uma cor.
+        - hidden: campo oculto, não visível ao usuário, usado para enviar dados extras no formulário.
+    -->
+
+    <h2>Inputs File, Color e Hidden</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <!-- Input tipo file -->
+        <label for="arquivo">Selecione um arquivo:</label>
+        <input type="file" id="arquivo" name="arquivo">
+        <br><br>
+
+        <!-- Input tipo color -->
+        <label for="cor">Escolha uma cor:</label>
+        <input type="color" id="cor" name="cor" value="#ff0000">
+        <br><br>
+
+        <!-- Input tipo hidden -->
+        <input type="hidden" name="usuarioId" value="12345">
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

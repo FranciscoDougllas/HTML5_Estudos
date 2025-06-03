@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de picture</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 40px 0;
+        }
+        picture, img {
+            margin: 16px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #3333;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        A tag <picture> é usada para fornecer várias fontes de imagem para diferentes tamanhos de tela ou formatos.
+        Dentro de <picture>, usamos <source> para definir diferentes imagens e condições (media queries ou tipos).
+        O navegador escolhe a primeira fonte compatível e, se nenhuma for adequada, usa o <img> como fallback.
+        É ideal para imagens responsivas e formatos modernos como WebP.
+    -->
+
+    <h2>Exemplo de uso da tag picture</h2>
+    <picture>
+        <!-- Imagem para telas grandes (mínimo 800px) -->
+        <source media="(min-width: 800px)" srcset="https://www.w3schools.com/html/img_chania.jpg">
+        <!-- Imagem para telas médias (mínimo 400px) -->
+        <source media="(min-width: 400px)" srcset="https://www.w3schools.com/html/img_girl.jpg">
+        <!-- Imagem WebP para navegadores compatíveis -->
+        <source type="image/webp" srcset="https://www.w3schools.com/html/img_chania.webp">
+        <!-- Imagem padrão (fallback) -->
+        <img src="https://www.w3schools.com/html/img_chania.jpg" alt="Imagem responsiva de exemplo" width="300">
+    </picture>
+    <p>
+        Redimensione a janela do navegador para ver a troca de imagens conforme o tamanho da tela.<br>
+        O elemento <strong>&lt;picture&gt;</strong> permite imagens responsivas e suporte a múltiplos formatos.
+    </p>
+</body>
+</html>

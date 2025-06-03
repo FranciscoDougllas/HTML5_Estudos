@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de map e area</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 40px 0;
+        }
+        img {
+            margin: 16px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #3333;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        A tag <map> é usada para criar áreas clicáveis em uma imagem (imagem mapeada).
+        Cada área é definida com a tag <area>, que pode ser de diferentes formas (retângulo, círculo, polígono).
+        O atributo "usemap" da <img> associa a imagem ao mapa criado.
+        É útil para criar menus gráficos, mapas interativos ou links em partes específicas da imagem.
+    -->
+
+    <h2>Exemplo de uso das tags map e area</h2>
+    <img src="https://www.w3schools.com/html/img_chania.jpg" alt="Paisagem de Chania" width="400" usemap="#mapaChania">
+
+    <map name="mapaChania">
+        <!-- Área retangular: x1,y1,x2,y2 -->
+        <area shape="rect" coords="34,44,270,350" href="https://www.w3schools.com/html/" alt="HTML Tutorial" title="Ir para HTML Tutorial">
+        <!-- Área circular: x,y,raio -->
+        <area shape="circle" coords="337,300,44" href="https://www.google.com/" alt="Google" title="Ir para Google">
+        <!-- Área poligonal: x1,y1,x2,y2,x3,y3,... -->
+        <area shape="poly" coords="290,172,333,250,333,330,300,330,270,250" href="https://www.example.com/" alt="Exemplo" title="Ir para Exemplo">
+    </map>
+
+    <p>
+        Clique nas diferentes áreas da imagem para acessar links diferentes.<br>
+        <strong>Dica:</strong> Passe o mouse sobre a imagem para ver as áreas interativas.
+    </p>
+</body>
+</html>

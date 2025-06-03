@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de inputs checkbox e radio</title>
+
+     <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        form {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 10px #333;
+            padding: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Exemplos de inputs dos tipos:
+        - checkbox: permite selecionar múltiplas opções independentes.
+        - radio: permite selecionar apenas uma opção dentro de um grupo.
+    -->
+
+    <h2>Inputs Checkbox e Radio</h2>
+    <form>
+        <!-- Input tipo checkbox -->
+        <p>Selecione seus hobbies:</p>
+        <label>
+            <input type="checkbox" name="hobbies" value="leitura">
+            Leitura
+        </label>
+        <label>
+            <input type="checkbox" name="hobbies" value="esportes">
+            Esportes
+        </label>
+        <label>
+            <input type="checkbox" name="hobbies" value="musica">
+            Música
+        </label>
+        <br><br>
+
+        <!-- Input tipo radio -->
+        <p>Escolha seu turno preferido:</p>
+        <label>
+            <input type="radio" name="turno" value="manha" checked>
+            Manhã
+        </label>
+        <label>
+            <input type="radio" name="turno" value="tarde">
+            Tarde
+        </label>
+        <label>
+            <input type="radio" name="turno" value="noite">
+            Noite
+        </label>
+        <br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

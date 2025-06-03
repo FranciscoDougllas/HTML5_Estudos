@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de source</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 40px 0;
+        }
+        audio, video {
+            margin: 16px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        A tag <source> é usada dentro de elementos de mídia como <audio>, <video> e <picture> para fornecer múltiplas fontes de arquivo.
+        O navegador escolhe a primeira fonte compatível.
+        Os principais atributos são:
+        - src: caminho ou URL do arquivo.
+        - type: tipo MIME do arquivo (ex: audio/mpeg, video/mp4, image/webp).
+        - media: condição de mídia (usado em <picture>).
+    -->
+
+    <h2>Exemplo de uso da tag source em áudio</h2>
+    <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+        Seu navegador não suporta o elemento <code>audio</code>.
+    </audio>
+
+    <h2>Exemplo de uso da tag source em vídeo</h2>
+    <video width="320" height="240" controls>
+        <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+        <source src="https://www.w3schools.com/html/movie.ogg" type="video/ogg">
+        Seu navegador não suporta o elemento <code>video</code>.
+    </video>
+
+    <h2>Exemplo de uso da tag source em picture</h2>
+    <picture>
+        <source media="(min-width: 800px)" srcset="https://www.w3schools.com/html/img_chania.jpg">
+        <source media="(min-width: 400px)" srcset="https://www.w3schools.com/html/img_girl.jpg">
+        <img src="https://www.w3schools.com/html/img_chania.jpg" alt="Imagem responsiva">
+    </picture>
+</body>
+</html>
