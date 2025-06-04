@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de dialog</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #f0f8ff;
+            margin: 0;
+            padding: 40px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        dialog {
+            border: 2px solid #007bff;
+            border-radius: 8px;
+            padding: 24px;
+            box-shadow: 0 2px 8px #3332;
+            font-size: 1.1rem;
+        }
+        button {
+            margin-top: 16px;
+            padding: 8px 16px;
+            border-radius: 4px;
+            border: none;
+            background: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        A tag <dialog> é usada para criar caixas de diálogo modais ou não modais, como janelas de aviso, confirmação ou formulários.
+        Pode ser aberta e fechada via JavaScript com os métodos .show(), .showModal() e .close().
+        O conteúdo do <dialog> pode incluir texto, formulários, botões e outros elementos HTML.
+    -->
+
+    <h2>Exemplo de uso da tag &lt;dialog&gt;</h2>
+    <button onclick="document.getElementById('meuDialogo').showModal()">Abrir Diálogo</button>
+
+    <dialog id="meuDialogo">
+        <form method="dialog">
+            <p><strong>Olá!</strong> Este é um exemplo de caixa de diálogo usando a tag <code>&lt;dialog&gt;</code>.</p>
+            <button>Fechar</button>
+        </form>
+    </dialog>
+</body>
+</html>

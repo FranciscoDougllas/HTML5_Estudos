@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de details</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #f0f8ff;
+            margin: 0;
+            padding: 40px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        details {
+            width: 400px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #3332;
+            padding: 16px;
+            margin-bottom: 24px;
+        }
+        summary {
+            font-weight: bold;
+            color: #007bff;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+        p {
+            margin-top: 12px;
+            color: #222;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        A tag <details> é usada para criar um bloco expansível que pode ser aberto ou fechado pelo usuário.
+        O elemento <summary> define o título visível do bloco.
+        O conteúdo dentro de <details> fica oculto até que o usuário clique no <summary>.
+        É útil para FAQs, informações adicionais, instruções ou exemplos.
+    -->
+
+    <h2>Exemplo de uso da tag &lt;details&gt;</h2>
+    <details>
+        <summary>O que é HTML5?</summary>
+        <p>
+            HTML5 é a versão mais recente da linguagem de marcação HTML, trazendo novos elementos semânticos, suporte a multimídia, gráficos, APIs e melhorias de acessibilidade.
+        </p>
+    </details>
+
+    <details>
+        <summary>Quais as vantagens do &lt;details&gt;?</summary>
+        <ul>
+            <li>Permite esconder/mostrar informações facilmente.</li>
+            <li>Melhora a experiência do usuário em FAQs e tutoriais.</li>
+            <li>Não requer JavaScript para funcionar.</li>
+        </ul>
+    </details>
+</body>
+</html>

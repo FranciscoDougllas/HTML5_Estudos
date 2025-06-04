@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de div</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #f0f8ff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 0;
+        }
+        .container {
+            width: 400px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #3332;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+        .header {
+            background: #007bff;
+            color: #fff;
+            padding: 12px;
+            border-radius: 6px 6px 0 0;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        .content {
+            padding: 16px;
+            color: #222;
+        }
+        .footer {
+            background: #e0e0e0;
+            padding: 8px;
+            border-radius: 0 0 6px 6px;
+            text-align: right;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        A tag <div> é um contêiner genérico usado para agrupar outros elementos e estruturar o layout da página.
+        Não possui significado semântico próprio, mas é muito útil para aplicar estilos, scripts ou organizar o conteúdo.
+        Pode receber classes e IDs para facilitar a estilização e manipulação via CSS/JavaScript.
+    -->
+
+    <div class="container">
+        <div class="header">Cabeçalho da Div</div>
+        <div class="content">
+            Este é o conteúdo principal dentro de uma <code>&lt;div&gt;</code>. 
+            Você pode colocar textos, imagens, listas, formulários e outros elementos aqui.
+        </div>
+        <div class="footer">Rodapé da Div</div>
+    </div>
+</body>
+</html>
