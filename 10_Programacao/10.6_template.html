@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de template</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #f0f8ff;
+            margin: 0;
+            padding: 40px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .cartao {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #3332;
+            padding: 24px;
+            margin: 16px 0;
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        A tag <template> é usada para definir um bloco de HTML que não é renderizado na página até ser ativado via JavaScript.
+        O conteúdo do <template> fica "oculto" até ser clonado e inserido dinamicamente no DOM.
+        É útil para criar componentes reutilizáveis, listas dinâmicas, modais, etc.
+    -->
+
+    <h2>Exemplo de uso da tag &lt;template&gt;</h2>
+    <button onclick="adicionarCartao()">Adicionar Cartão</button>
+
+    <template id="cartaoTemplate">
+        <div class="cartao">
+            <h3>Cartão Dinâmico</h3>
+            <p>Este cartão foi criado a partir de um template!</p>
+        </div>
+    </template>
+
+    <div id="container"></div>
+
+    <script>
+        function adicionarCartao() {
+            const template = document.getElementById('cartaoTemplate');
+            const clone = template.content.cloneNode(true);
+            document.getElementById('container').appendChild(clone);
+        }
+    </script>
+</body>
+</html>

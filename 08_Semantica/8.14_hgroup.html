@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hgroup</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #f0f8ff;
+            margin: 0;
+            padding: 40px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .exemplo {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #3332;
+            padding: 24px;
+            margin-bottom: 24px;
+            width: 400px;
+        }
+        hgroup h1 {
+            margin: 0;
+            color: #007bff;
+        }
+        hgroup h2 {
+            margin: 0;
+            font-size: 1.1rem;
+            color: #555;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        A tag <hgroup> é usada para agrupar um conjunto de títulos (<h1>–<h6>) e subtítulos relacionados.
+        Isso indica que os títulos agrupados pertencem ao mesmo bloco de cabeçalho, melhorando a semântica e a acessibilidade.
+        Exemplo comum: título principal e subtítulo de uma seção ou artigo.
+    -->
+
+    <div class="exemplo">
+        <hgroup>
+            <h1>HTML5 Semântica</h1>
+            <h2>Entenda o uso de elementos estruturais modernos</h2>
+        </hgroup>
+        <p>
+            O elemento <code>&lt;hgroup&gt;</code> agrupa títulos e subtítulos, deixando claro que eles pertencem ao mesmo contexto ou seção.
+        </p>
+    </div>
+</body>
+</html>

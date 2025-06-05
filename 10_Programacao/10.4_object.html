@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de object</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #f0f8ff;
+            margin: 0;
+            padding: 40px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        object {
+            margin: 16px 0;
+            border: 2px solid #007bff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #3332;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        A tag <object> é usada para incorporar objetos externos, como arquivos PDF, imagens, vídeos, aplicativos ou outros recursos multimídia em uma página HTML.
+        Os principais atributos são:
+        - data: caminho ou URL do arquivo a ser incorporado.
+        - type: tipo MIME do conteúdo (ex: application/pdf, image/png, video/mp4).
+        - width e height: definem o tamanho do objeto incorporado.
+        O conteúdo entre as tags <object> é exibido caso o navegador não consiga carregar o recurso.
+    -->
+
+    <h2>Exemplo de uso da tag &lt;object&gt;</h2>
+    <!-- Exemplo incorporando um PDF -->
+    <object data="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" type="application/pdf" width="400" height="300">
+        Este navegador não suporta visualização de PDF. 
+        <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf">Clique aqui para baixar o PDF</a>.
+    </object>
+
+    <!-- Exemplo incorporando uma imagem -->
+    <object data="https://www.w3schools.com/html/img_chania.jpg" type="image/jpeg" width="300" height="200">
+        Imagem não suportada.
+    </object>
+
+    <p>
+        O elemento <code>&lt;object&gt;</code> permite incorporar diversos tipos de arquivos e aplicativos externos na página HTML.
+    </p>
+</body>
+</html>

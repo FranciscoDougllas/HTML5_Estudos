@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        A tag <base> é usada dentro do <head> para definir a URL base para todos os links relativos e recursos do documento.
+        O atributo "href" especifica a URL base.
+        Se <base> estiver presente, todos os caminhos relativos (em <a>, <img>, <link>, <script>, etc.) serão resolvidos a partir dessa URL.
+        Só pode haver uma tag <base> por documento e ela deve ser colocada antes de qualquer referência relativa.
+    -->
+    <base href="https://www.exemplo.com/pasta/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exemplo de uso da tag base em HTML5">
+    <title>Exemplo de uso da tag &lt;base&gt;</title>
+</head>
+<body>
+    <h1>Exemplo de uso da tag &lt;base&gt;</h1>
+    <p>
+        Com a tag <code>&lt;base href="https://www.exemplo.com/pasta/"&gt;</code>, todos os links relativos abaixo serão resolvidos a partir dessa URL base.
+    </p>
+    <ul>
+        <li><a href="pagina.html">Link para página.html</a> (irá para https://www.exemplo.com/pasta/pagina.html)</li>
+        <li><img src="imagem.jpg" alt="Exemplo de imagem"> (irá buscar https://www.exemplo.com/pasta/imagem.jpg)</li>
+    </ul>
+</body>
+</html>

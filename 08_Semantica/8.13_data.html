@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de data</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #f0f8ff;
+            margin: 0;
+            padding: 40px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .exemplo {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #3332;
+            padding: 24px;
+            margin-bottom: 24px;
+            width: 400px;
+        }
+        code {
+            background: #e0e0e0;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        A tag <data> é usada para associar um valor legível por máquina a um conteúdo legível por humanos.
+        O atributo "value" armazena o valor que pode ser usado por scripts, aplicações ou para fins de processamento de dados.
+        É útil para marcar dados em listas, tabelas ou textos, facilitando a extração e manipulação dessas informações.
+    -->
+
+    <div class="exemplo">
+        <h2>Exemplo de uso da tag &lt;data&gt;</h2>
+        <ul>
+            <li>Produto: <data value="12345">Notebook</data></li>
+            <li>Produto: <data value="67890">Smartphone</data></li>
+            <li>Produto: <data value="54321">Tablet</data></li>
+        </ul>
+        <p>
+            No exemplo acima, cada produto possui um código associado no atributo <code>value</code> da tag <code>&lt;data&gt;</code>.
+        </p>
+    </div>
+</body>
+</html>

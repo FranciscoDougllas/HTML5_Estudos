@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de param</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #f0f8ff;
+            margin: 0;
+            padding: 40px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        object {
+            margin: 16px 0;
+            border: 2px solid #007bff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #3332;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        A tag <param> é usada dentro de <object> para passar parâmetros ao objeto incorporado.
+        Cada <param> define um nome e um valor para configuração do objeto, como controles, autoplay, cor de fundo, etc.
+        É mais comum em objetos multimídia ou plugins antigos (como Flash, applets Java).
+    -->
+
+    <h2>Exemplo de uso da tag &lt;param&gt; com &lt;object&gt;</h2>
+    <!-- Exemplo ilustrativo: vídeo com parâmetros (nem todos navegadores suportam param em video moderno) -->
+    <object data="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" width="400" height="225">
+        <param name="autoplay" value="true">
+        <param name="controls" value="true">
+        Seu navegador não suporta o elemento <code>object</code> para vídeos.
+    </object>
+
+    <p>
+        O elemento <code>&lt;param&gt;</code> é usado para passar parâmetros de configuração para objetos incorporados via <code>&lt;object&gt;</code>.
+    </p>
+</body>
+</html>

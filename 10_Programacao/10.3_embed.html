@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de embed</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #f0f8ff;
+            margin: 0;
+            padding: 40px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        embed {
+            margin: 16px 0;
+            border: 2px solid #007bff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #3332;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        A tag <embed> é usada para incorporar conteúdo externo, como PDFs, vídeos, áudios ou outros tipos de mídia e aplicativos, diretamente em uma página HTML.
+        Os principais atributos são:
+        - src: caminho ou URL do arquivo a ser incorporado.
+        - type: tipo MIME do conteúdo (ex: application/pdf, video/mp4).
+        - width e height: definem o tamanho do conteúdo incorporado.
+        O <embed> é um elemento vazio (não possui tag de fechamento).
+    -->
+
+    <h2>Exemplo de uso da tag &lt;embed&gt;</h2>
+    <!-- Exemplo incorporando um PDF -->
+    <embed src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" type="application/pdf" width="400" height="300">
+
+    <!-- Exemplo incorporando um vídeo MP4 -->
+    <embed src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" width="400" height="225">
+
+    <p>
+        O elemento <code>&lt;embed&gt;</code> permite incorporar diversos tipos de mídia e aplicativos diretamente na página HTML.
+    </p>
+</body>
+</html>
